@@ -1,0 +1,294 @@
+@font-face {
+    font-family: "money";
+    src: url(../fonts/Gotham-Book.otf);
+}
+
+* {
+    outline: none;
+    -webkit-appearance: none;
+    -webkit-touch-callout:none;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+body { 
+    padding-top: 50px;
+    overflow: hidden;
+    background: #f8f8f8;
+}
+
+a:focus {
+    outline: none;
+}
+
+.navbar.navbar-default {
+    margin-bottom: 0;
+    box-shadow: none;
+}
+
+.navbar-brand-centered {
+    position: absolute;
+    left: 50%;
+    display: block;
+    width: 320px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.navbar>.container .navbar-brand-centered, 
+.navbar>.container-fluid .navbar-brand-centered {
+    margin-left: -160px;
+}
+
+.navbar.navbar-default .navbar-header a {
+    position: absolute;
+    z-index: 99;
+}
+
+.navbar.navbar-default .navbar-header a.call-waiter {
+    right: 0;
+    margin-right: 5px;
+}
+
+.left-side-menu {
+    padding: 0;
+    height: 100%;
+    background: #f2f2f2;
+}
+
+.left-side-menu ul li a {
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 0;
+}
+
+.left-side-menu ul li.active, .left-side-menu ul li.active a, .left-side-menu ul li:hover a, .left-side-menu ul li a:hover {
+    background: #fff;
+}
+
+.suggest-list li a {
+    color: #333;
+}
+
+.suggest-list li a span {
+    color: #ff0033;
+}
+
+.content {
+    overflow: hidden;
+    padding: 0 0 60px 0;
+}
+
+.tab-content {
+    background: #fff;
+}
+
+.tab-pane {
+    padding-top: 10px;
+}
+
+.dish-detail-img {
+    padding: 0 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.dish-detail-img img {
+    width: 60px;
+}
+
+.dish-detail-img h4.dish-name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.dish-detail-img p.dish-desc {
+    font-size: 10px;
+    line-height: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.dish-detail-img p.dish-price {
+    font-family: "money";
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 0;
+    color: #ff0033;
+}
+
+.dish-detail-img .change-dish-number {
+    padding: 8px 0 0 0;
+}
+
+.dish-detail-img .plus-btn {
+    margin-bottom: 10px;
+}
+
+.default-hide .minus-btn, .default-hide p.dish-number {
+    display: none;
+}
+
+.dish-detail-img p.dish-number {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 10px;
+    color: #333;
+}
+
+p.no-dishes-tips {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: #999;
+    margin-top: 50%;
+}
+
+.bottom-info-line {
+    display: none;
+    padding-top: 10px;
+}
+
+.bottom-info-line .order-info {
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.bottom-info-line .order-info span.total-price {
+    font-family: "money";
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 2px;
+    color: #ff0033;
+}
+
+.choose-desk {
+    margin-top: 20px;
+}
+
+.check-order {
+    margin-top: 20px;
+}
+
+.check-order h3.panel-title {
+    font-weight: normal;
+    font-size: 14px;
+    color: #666;
+}
+
+.check-order a.clear-order-btn {
+    margin-top: -23px;
+}
+
+.check-order .panel-body {
+    padding: 15px 0;
+}
+
+.check-order .order-total-info {
+    padding: 10px 0 0 0;
+}
+
+.check-order .order-total-info .order-info {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.check-order .order-total-info .order-info span.total-price {
+    font-family: "money";
+    font-weight: bold;
+    padding: 0 2px;
+    color: #ff0033;
+}
+
+.pay-order-list {
+    margin-top: 20px;
+}
+
+.pay-order-list .list-title-item {
+    height: 32px;
+    padding: 0 15px;
+}
+
+.pay-order-list .list-title-item p {
+    margin: 0;
+    line-height: 32px;
+}
+
+.pay-order-list .list-group-item .order-price {
+    font-family: "money";
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff0033;
+    margin: 0;
+    line-height: 32px;
+}
+
+.pay-order-list .list-group-item .order-price-small {
+    font-family: "money";
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff0033;
+    margin: 0;
+    line-height: 24px;
+}
+
+.pay-bottom-line {
+    padding-top: 5px; 
+    background: #fff;
+    border-top: 1px solid #ccc;
+}
+
+.pay-bottom-line .container-fluid {
+    padding: 0;
+}
+
+.pay-bottom-line .container-fluid .col-xs-6 {
+    padding: 0;
+}
+
+.pay-bottom-line .container-fluid .col-xs-6 button {
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+#payModal {
+
+}
+
+#payModal h1 {
+    margin: 20px 0;
+}
+
+#payModal i.fa-weixin {
+    color: #609700;
+}
+
+#shareModal {
+
+}
+
+#shareModal h4.modal-title {
+
+}
+
+#shareModal .modal-body p {
+    font-size: 16px;
+    margin: 0;
+}
+
+#shareModal .modal-body h1.discount-price {
+    font-family: 'money';
+    font-size: 26px;
+    font-weight: bold;
+    margin: 12px 0;
+    color: #ff0033;
+}
+
+#shareModal .modal-body p.discount-tips {
+    font-size: 14px;
+    margin: 0;
+    color: #666;
+}
+

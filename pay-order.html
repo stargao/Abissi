@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.css" />
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/buttons.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <title>乐摇肴点餐</title>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a href="dish-order.html" class="btn btn-link navbar-btn pull-left"><span class="fa fa-chevron-left"></span> 返回</a>
+                <div class="navbar-brand navbar-brand-centered">乐摇肴点餐</div>
+                <a href="#" class="btn btn-default navbar-btn pull-right btn-sm call-waiter"><span class="fa fa-bell-o"></span> 服务员</a>
+            </div>
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="content">
+        <ul class="list-group pay-order-list">
+            <li class="list-group-item disabled list-title-item">
+                <p class="pull-left">15<span>桌，</span>3<span>人就餐</span></p>
+                <!--p class="pull-right"><span>合计:</span> ￥328.0</p-->
+                <a class="pull-right btn btn-link btn-sm"><span class="glyphicon glyphicon-refresh"></span> 刷新菜单</a>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <p class="col-xs-6">西湖醋鱼</p>
+                    <p class="col-xs-3">￥68.0</p>
+                    <p class="col-xs-3 text-center">1</p>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <p class="col-xs-6">龙凤呈祥</p>
+                    <p class="col-xs-3">￥88.0</p>
+                    <p class="col-xs-3 text-center">1</p>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <p class="col-xs-6">清蒸甲鱼</p>
+                    <p class="col-xs-3">￥128.0</p>
+                    <p class="col-xs-3 text-center">1</p>
+                </div>
+            </li>
+            <li class="list-group-item disabled list-title-item">
+                <p>固定消费项目</p>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <p class="col-xs-6">碗筷</p>
+                    <p class="col-xs-3">￥1.0</p>
+                    <p class="col-xs-3 text-center">3</p>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <p class="col-xs-6">米饭</p>
+                    <p class="col-xs-3">￥1.0</p>
+                    <p class="col-xs-3 text-center">3</p>
+                </div>
+            </li>
+            <li class="list-group-item disabled list-title-item">
+                <p>合计</p>
+            </li>
+            <li class="list-group-item total-price">
+                <div class="row">
+                    <p class="col-xs-12 text-right order-price">￥328.0</p>
+                </div>
+            </li>
+            <li class="list-group-item discount-price hide">
+                <div class="row">
+                    <p class="col-xs-12 text-right order-price-small">￥328.0</p>
+                </div>
+                <div class="row">
+                    <p class="col-xs-12 text-right order-price-small">-￥2.5</p>
+                </div>
+                <div class="row">
+                    <p class="col-xs-12 text-right order-price">￥325.5</p>
+                </div>
+            </li>
+        </ul>
+        <div class="col-xs-10 col-xs-offset-1">
+            <a href="#share" class="button button-caution button-block pay-btn" data-toggle="modal" data-target="#payModal"><i class="glyphicon glyphicon-yen"></i> 我来买单</a>
+        </div>
+        <!--div class="col-xs-10 col-xs-offset-1">
+            <a href="#share" class="button button-caution button-block button-border share-btn" data-toggle="modal" data-target="#shareModal"><i class="glyphicon glyphicon-share"></i> 分享赢折扣</a>
+        </div-->
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="payModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">分享赢折扣</h4>
+                </div>
+                <div class="modal-body">
+                    <h1 class="text-center"><i class="fa fa-weixin"></i></h1>
+                    <p class="text-center">立即分享到朋友圈，将有机会获取现金折扣，可立即抵用。</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#share" class="button button-caution button-block button-border share-btn" data-toggle="modal" data-target="#shareModal"><i class="glyphicon glyphicon-share"></i> 分享赢折扣</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="shareModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">分享成功！</h4>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center">你已经获得折扣</p>
+                    <h1 class="text-center discount-price">￥2.5</h1>
+                    <p class="text-center discount-tips">获得的折扣将立即结算到本订单中</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-default navbar-fixed-bottom pay-bottom-line hide">
+        <div class="container-fluid">
+            <div class="col-xs-6 text-center">
+                <button class="button button-caution button-block button-border navbar-btn"><i class="fa fa-cny"></i> 其它支付</button>
+            </div>
+            <div class="col-xs-6 text-center">
+                <button class="button button-caution button-block navbar-btn"><i class="fa fa-weixin"></i> 微信支付</button>
+            </div>
+        </div>
+    </nav>
+    <script type="text/javascript" src="js/vendor/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="js/vendor/bootstrap.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script>
+        $(function() {
+            $('.share-btn').click(function(){
+                $('#payModal').modal('hide');
+            });
+
+            $('#shareModal').on('hidden.bs.modal', function() {
+                $('.pay-btn').addClass('hide');
+                $('.pay-bottom-line').removeClass('hide');
+                $('.total-price').addClass('hide');
+                $('.discount-price').removeClass('hide');
+            });
+        });
+    </script>
+</body>
+</html>

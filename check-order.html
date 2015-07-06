@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.css" />
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/buttons.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <title>乐摇肴点餐</title>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a href="dish-order.html" class="btn btn-link navbar-btn pull-left"><span class="fa fa-chevron-left"></span> 修改点菜</a>
+                <div class="navbar-brand navbar-brand-centered">乐摇肴点餐</div>
+                <a href="#" class="btn btn-default navbar-btn pull-right btn-sm call-waiter"><span class="fa fa-bell-o"></span> 服务员</a>
+            </div>
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="content">
+        <div class="panel panel-default check-order">
+            <div class="panel-heading">
+                <h3 class="panel-title">15<span>桌，</span>3<span>人就餐</span></h3>
+                <a href="#clear" class="btn btn-link btn-sm pull-right clear-order-btn"><i class="glyphicon glyphicon-trash"></i> 清空菜单</a>
+            </div>
+            <div class="panel-body">
+                <div class="media col-xs-12 dish-detail-img">
+                    <div class="media-body">
+                        <div class="col-xs-6">
+                            <h4 class="media-heading dish-name">西湖醋鱼</h4>
+                            <p class="dish-price text-left">￥68.0</p>
+                        </div>
+                        <div class="col-xs-6 change-dish-number">
+                            <a href="#plus" class="button button-primary button-circle button-small pull-right plus-btn"><i class="fa fa-plus"></i></a>
+                            <p class="dish-number pull-right">1</p>
+                            <a href="#minus" class="button button-default button-circle button-small pull-right minus-btn"><i class="fa fa-minus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="media col-xs-12 dish-detail-img">
+                    <div class="media-body">
+                        <div class="col-xs-6">
+                            <h4 class="media-heading dish-name">龙凤呈祥</h4>
+                            <p class="dish-price text-left">￥88.0</p>
+                        </div>
+                        <div class="col-xs-6 change-dish-number">
+                            <a href="#plus" class="button button-primary button-circle button-small pull-right plus-btn"><i class="fa fa-plus"></i></a>
+                            <p class="dish-number pull-right">1</p>
+                            <a href="#minus" class="button button-default button-circle button-small pull-right minus-btn"><i class="fa fa-minus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="media col-xs-12 dish-detail-img">
+                    <div class="media-body">
+                        <div class="col-xs-6">
+                            <h4 class="media-heading dish-name">清蒸甲鱼</h4>
+                            <p class="dish-price text-left">￥128.0</p>
+                        </div>
+                        <div class="col-xs-6 change-dish-number">
+                            <a href="#plus" class="button button-primary button-circle button-small pull-right plus-btn"><i class="fa fa-plus"></i></a>
+                            <p class="dish-number pull-right">1</p>
+                            <a href="#minus" class="button button-default button-circle button-small pull-right minus-btn"><i class="fa fa-minus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--div class="col-xs-12">
+                    <form>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="给店家留言"></textarea>
+                        </div>
+                    </form>
+                </div-->
+                <div class="col-xs-12 order-total-info">
+                    <div class="col-xs-6">
+                        <p class="pull-left order-info"><span class="label label-info">4</span><span class="total-price">￥328.0</span></p>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="pay-order.html" class="button button-caution button-rounded button-small pull-right">确定</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/vendor/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="js/vendor/bootstrap.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
