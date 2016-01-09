@@ -292,3 +292,18 @@ p.no-dishes-tips {
     color: #666;
 }
 
+#dishPanel .thumbnail {
+    padding: 0;
+}
+
+#dishPanel h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#dishPanel p {
+    font-size: 14px;
+    color: #666;
+}
+
